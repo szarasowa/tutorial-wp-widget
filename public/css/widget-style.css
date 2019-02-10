@@ -1,0 +1,35 @@
+.wtykadate {
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    transition: all .3s;
+    color: #666;
+}
+
+.super-wtyka-date {
+    font-size: 36px;
+    width: 60px;
+    float: left;
+}
+
+.super-wtyka-date span {
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.super-wtyka-content {
+    margin-left: 60px;
+}
+
+.super-wtyka-title {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.super-wtyka-hours {
+    display: block;
+    font-size: 12px;
+}
