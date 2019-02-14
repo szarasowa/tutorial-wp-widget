@@ -13,7 +13,7 @@ function super_wtyka_widget_content() {
         ?>
         <a href="<?php the_permalink(); ?>">
             <div class="super-wtyka-widget" >
-                <div class="wtykadate"><?php echo $day; ?><span><?php echo $month; ?> </span></div>
+                <div class="super-wtyka-date"><?php echo $day; ?><span><?php echo $month; ?> </span></div>
                 <div class="super-wtyka-content">
                     <span class="super-wtyka-title"><?php the_title(); ?></span>
                     <span class="super-wtyka-hours"><?php echo $time; ?></span>
@@ -31,7 +31,7 @@ function super_wtyka_widget_content() {
 
 function super_wtyka_load_styles() 
 {
-    wp_enqueue_style('super_wtyka_widget_style', plugins_url('/super-wtyka/public/widget-style.css'));
+    wp_enqueue_style('super_wtyka_widget_style', $src = '/wp-content/plugins/super-wtyka/public/css/widget-style.css');
 }
 
 add_action('wp_enqueue_scripts', 'super_wtyka_load_styles');
