@@ -18,6 +18,7 @@ function super_wtyka_create_posttype()
  
 add_action( 'init', 'super_wtyka_create_posttype' );
  
+
 function super_wtyka_metaboxes()
 {
     add_meta_box('super_wtyka_events_location', 'Event Location', 'super_wtyka_events_location', 'events', 'normal', 'default');
@@ -83,3 +84,12 @@ function super_wtyka_save_meta($post_id, $post)
 }
 
 add_action('save_post', 'super_wtyka_save_meta', 1, 2);
+
+
+function super_wtyka_add_settings_page() 
+{
+    add_submenu_page('edit.php?post_type=events', 'Super Wtyka - Settings', 'Settings', 'manage_options', 
+                    'super_wtyka_settings', 'super_wtyka_settings_content');
+}
+
+add_action('admin_menu', 'super_wtyka_add_settings_page');
